@@ -106,12 +106,12 @@ function renderCart() {
   let total = 0;
 
   cart.forEach(item => {
-    container.innerHTML += <p>${item.title} - ${item.price} ALIMENTATION DE AFENGA;
+    container.innerHTML += <p>${item.title} - ${item.price} ALIMENTATION DE AFENGA ;
     total += item.price;
   });
 
   document.getElementById("total").innerText =
-    "Total: " + total + " Pi";
+    "Total: " + total + " Sidra";
 }
 
 // ================== CHECKOUT ==================
@@ -143,4 +143,4 @@ function checkout() {
 
 function onIncompletePaymentFound(payment) {
   console.log(payment);
-}
+    }
